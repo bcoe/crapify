@@ -1,9 +1,12 @@
 {
   "name": "crapify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a proxy for simulating slow, spotty, HTTP connections",
   "main": "index.js",
   "bin": "./bin/crapify.js",
+  "git": {
+    "url": "https://github.com/bcoe/crapify"
+  },
   "scripts": {},
   "keywords": [
     "proxy",
