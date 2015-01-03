@@ -23,7 +23,7 @@ crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you 
 
 `curl -v --proxy http://127.0.0.1:5000 https://www.google.com`
 
-### on OSX
+### usage with OSX
 
 1. Go to `system preferences`.
 2. Click on `Network`.
