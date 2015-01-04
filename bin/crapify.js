@@ -4,12 +4,17 @@ var yargs = require('yargs')
   .options('p', {
     alias: 'port',
     default: 5000,
-    description: 'port to run crapify server on'
+    description: 'port to run proxy server on'
   })
   .options('s', {
     alias: 'speed',
     default: 10000,
     description: 'connection speed in bytes/second'
+  })
+  .options('d', {
+    alias: 'drop-frequency',
+    default: 0,
+    description: 'how frequently should bytes be dropped? (byte count % drop-frequency)'
   })
   .options('c', {
     alias: 'concurrency',
@@ -24,13 +29,14 @@ var yargs = require('yargs')
         (new Crapify({
           port: args.port,
           speed: args.speed,
-          concurrency: args.concurrency
+          concurrency: args.concurrency,
+          dropFrequency: args['drop-frequency']
         })).start();
       }
     },
   },
-  Crapify = require('../index'),
-  usageString = "crapify: simulate bad HTTP connections.\n\n";
+  Crapify = require('../lib/crapify'),
+  usageString = "a proxy for simulating bad HTTP connections.\n\n";
 
 // generate usage string.
 Object.keys(commands).forEach(function(command) {
