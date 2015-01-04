@@ -14,6 +14,7 @@ crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you 
   * `port` is the port crapify should start on.
   * `speed` is the connection speed in bytes/second.
   * `concurrency` is the number of concurrent outbound connections allowed.
+  * `drop-frequency` how often should bytes be dropped? (`byte count` % `drop frequency`).
 
 ## Examples
 
