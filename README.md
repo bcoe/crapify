@@ -1,5 +1,7 @@
 # crapify
 
+[![Build Status](https://travis-ci.org/bcoe/crapify.png)](https://travis-ci.org/bcoe/crapify)
+
 crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you to vary:
 
 * the upload and download speed of requests.
