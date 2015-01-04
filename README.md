@@ -1,9 +1,10 @@
 # crapify
 
-crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you to limit:
+crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you to vary:
 
 * the upload and download speed of requests.
 * the maximum number of concurrent outbound HTTP connections.
+* the number of bytes dropped during transfers.
 
 [Contribute to Crapify on GitHub](https://github.com/bcoe/crapify)
 
