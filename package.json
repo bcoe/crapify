@@ -4,6 +4,7 @@
   "description": "a proxy for simulating slow, spotty, HTTP connections",
   "main": "index.js",
   "bin": "./bin/crapify.js",
+  "homepage": "https://github.com/bcoe/crapify",
   "git": {
     "url": "git://github.com/bcoe/crapify.git"
   },

@@ -5,6 +5,8 @@ crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you 
 * the upload and download speed of requests.
 * the maximum number of concurrent outbound HTTP connections.
 
+[Contribute to Crapify on GitHub](https://github.com/bcoe/crapify)
+
 ## Usage
 
 * `npm install crapify -g`
