@@ -1,6 +1,6 @@
 {
   "name": "crapify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a proxy for simulating slow, spotty, HTTP connections",
   "main": "index.js",
   "bin": "./bin/crapify.js",
