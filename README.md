@@ -36,3 +36,7 @@ crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you 
 3. Click on `Advanced`.
 4. Click on `Proxies`.
 5. Enable an `http`, and an `https` proxy, with `127.0.0.1`, and `:5000`, respectively.
+
+## If you like crapify, you may also like...
+
+- [tylertreat/Comcast](https://github.com/tylertreat/Comcast), a Go frontend that simulates terrible network connections by directly modifying settings for your network interfaces.
