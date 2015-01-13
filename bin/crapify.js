@@ -20,6 +20,16 @@ var yargs = require('yargs')
     alias: 'concurrency',
     default: 10,
     description: 'how many concurrent connections are allowed to proxy'
+  })
+  .options('k', {
+    alias: 'close',
+    default: false,
+    description: "should 'connection: close' be set on the outbound connection"
+  })
+  .options('z', {
+    alias: 'sleep',
+    default: 0,
+    description: 'how long should crapify sleep before processing the next connection'
   }),
   chalk = require('chalk'),
   commands = {
@@ -30,7 +40,9 @@ var yargs = require('yargs')
           port: args.port,
           speed: args.speed,
           concurrency: args.concurrency,
-          dropFrequency: args['drop-frequency']
+          dropFrequency: args['drop-frequency'],
+          sleep: args.sleep,
+          close: args.close
         })).start();
       }
     },
