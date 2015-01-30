@@ -13,11 +13,11 @@ crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you 
 ## Usage
 
 * `npm install crapify -g`
-* `crapify --port=5000 --speed=3000 --concurrency=2`, where:
+* `crapify start --port=5000 --speed=3000 --concurrency=2`, where:
   * `port` is the port crapify should start on.
   * `speed` is the connection speed in bytes/second.
   * `concurrency` is the number of concurrent outbound connections allowed.
-  * `drop-frequency` how often should bytes be dropped? (`byte count` % `drop frequency`).
+  * `drop-frequency` is how often bytes should be dropped (`byte count` % `drop frequency`).
 
 ## Examples
 
