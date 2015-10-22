@@ -8,7 +8,8 @@
   "scripts": {
     "test": "./node_modules/.bin/lab -v -c --timeout 5000"
   },
-  "git": {
+  "repository": {
+    "type": "git",
     "url": "git://github.com/bcoe/crapify.git"
   },
   "keywords": [
