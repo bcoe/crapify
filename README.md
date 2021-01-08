@@ -19,6 +19,12 @@ crapify is a proxy for simulating slow, spotty, HTTP connections. It allows you 
   * `concurrency` is the number of concurrent outbound connections allowed.
   * `drop-frequency` is how often bytes should be dropped (`byte count` % `drop frequency`).
 
+## Docker
+
+* To build your image use: `docker build . -t crapify:latest`
+* `docker run -d -p 5000:5000 crapify`. You can specify every crapify options thru env variables, eg:
+  * `docker run -d -p 5000:5000 -e SPEED=3000 -e CONCURRENCY=2 crapify`
+
 ## Examples
 
 ### usage with npm
